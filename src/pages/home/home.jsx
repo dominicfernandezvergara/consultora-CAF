@@ -15,7 +15,7 @@ function Home() {
       <SecondSectionHome
         title="Problema a Solucionar"
         text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua."
+      tempor incididunt ut labore et dolore magna aliqua hola."
         buttonText="cotiza aquí"
         paths="./cotizacion"
         colorButton="primary"
