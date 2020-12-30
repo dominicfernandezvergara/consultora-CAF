@@ -1,0 +1,38 @@
+.containerButton {
+  width: 100%;
+  text-align: center;
+}
+.containerButton :global(.MuiButton-root) {
+  color: var(--white);
+  text-transform: uppercase;
+  border-radius: 20px;
+  width: 80%;
+}
+.colorPrimary :global(.MuiButton-root) {
+  background-color: var(--primary);
+}
+.colorSecondary :global(.MuiButton-root) {
+  background-color: var(--button);
+}
+
+.containerButton :global(.MuiButton-root:hover) {
+  background-color: var(--buttonHover);
+}
+@media screen and (min-width: 768px) {
+  .containerButton :global(.MuiButton-root) {
+    width: auto;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .containerButton :global(.MuiButton-root) {
+    width: auto;
+    font-size: 26px;
+    padding: 12px 24px;
+    border-radius: 5px;
+  }
+}
+@media screen and (min-width: 1440px) {
+}

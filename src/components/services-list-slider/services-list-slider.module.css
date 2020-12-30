@@ -1,0 +1,29 @@
+.containerServicesList {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  padding-top: 16px;
+}
+.serviceList {
+  display: flex;
+  overflow-x: scroll;
+}
+.boxService {
+  background-color: transparent;
+  width: 150px;
+  border: none;
+  margin: 0px 10px;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+.subtitle {
+  color: white;
+  font-size: 16px;
+}
+.icon {
+  color: white;
+}
+.icon :global(.MuiSvgIcon-root) {
+  font-size: 30px;
+}
+.buttonService {
+}

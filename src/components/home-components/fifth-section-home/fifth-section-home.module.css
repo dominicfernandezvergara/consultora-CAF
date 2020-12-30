@@ -1,0 +1,74 @@
+.containerFifthSection {
+  text-align: center;
+  padding: 50px 20px;
+}
+.containerFifthSectionBlack {
+  background-color: var(--primary);
+}
+.title {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 26px;
+  /* padding-bottom: 30px; */
+  text-align: center;
+  color: var(--primary);
+}
+.titleWhite {
+  color: var(--white);
+}
+.containerButtonIcons {
+  display: flex;
+}
+.containerIconsSection {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  padding: 30px 0px;
+  /* margin-bottom: 30px; */
+}
+.iconsSection {
+  margin: 30px 0px;
+}
+.icon {
+  color: var(--primary);
+}
+.iconBlackStyle {
+  color: var(--white);
+}
+.icon :global(.MuiSvgIcon-root) {
+  font-size: 50px;
+}
+.textIcon {
+  margin-top: 10px;
+  font-size: 20px;
+  color: var(--primary);
+}
+.textIconBlackStyle {
+  color: var(--white);
+}
+@media screen and (min-width: 768px) {
+  .containerIconsSection {
+    flex-direction: unset;
+    justify-content: center;
+  }
+  .iconsSection {
+    margin: 20px 36px;
+    width: 30%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .containerFifthSection {
+    padding: 100px 30px;
+  }
+  .containerIconsSection {
+    padding: 80px 0px;
+  }
+  .icon :global(.MuiSvgIcon-root) {
+    font-size: 80px;
+  }
+  .textIcon {
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 1440px) {
+}

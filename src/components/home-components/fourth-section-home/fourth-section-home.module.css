@@ -1,0 +1,85 @@
+.containerSection {
+  background-color: var(--white);
+  padding: 2px;
+}
+.title {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--primary);
+  font-size: 22px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.containerText {
+  background-color: var(--light);
+  margin: 10px 10px 20px 10px;
+  border-radius: 10px;
+  padding: 20px 10px;
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+    0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+.subTitle {
+  font-weight: 400;
+  color: #a4c1f5;
+  text-transform: uppercase;
+}
+.text {
+  color: var(--white);
+  padding: 20px 0px;
+}
+.containerButton {
+  width: 100%;
+  text-align: center;
+}
+.containerButton :global(.MuiButton-root) {
+  color: var(--white);
+  background-color: var(--button);
+  text-transform: uppercase;
+  border-radius: 20px;
+}
+
+.containerButton :global(.MuiButton-root:hover) {
+  background-color: var(--buttonHover);
+}
+@media screen and (min-width: 768px) {
+  .containerSection {
+    padding: 40px 20px;
+  }
+  .title {
+    font-size: 26px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+  }
+  .subTitle {
+    font-size: 22px;
+  }
+  .text {
+    padding: 20px 0px;
+    font-size: 20px;
+  }
+  .containerButton :global(.MuiButton-root) {
+    border-radius: 5px;
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .containerServices {
+    display: flex;
+  }
+  .containerText {
+    padding: 20px;
+  }
+  .text {
+    padding: 30px 0px;
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .containerSection {
+    padding: 80px 80px;
+  }
+  .title {
+    padding-bottom: 40px;
+  }
+}

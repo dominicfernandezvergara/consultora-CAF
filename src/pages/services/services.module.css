@@ -1,0 +1,24 @@
+.containerServices {
+  background-color: var(--primary);
+  padding: 2px;
+}
+.title {
+  color: var(--white);
+  font-weight: 400;
+  text-align: center;
+  padding-top: 20px;
+}
+.containerService {
+  background-color: var(--light);
+  margin: 10px 10px 20px 10px;
+  border-radius: 10px;
+  padding: 20px 10px;
+}
+.subTitle {
+  font-weight: 400;
+  color: #a4c1f5;
+  text-transform: uppercase;
+}
+.text {
+  color: var(--white);
+}

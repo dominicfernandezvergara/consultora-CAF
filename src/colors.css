@@ -1,0 +1,13 @@
+:root {
+  --white: rgba(255, 255, 255, 1);
+  --primary: rgba(1, 34, 93, 1);
+  --secondary: rgba(79, 125, 255, 1);
+  --button: rgba(79, 125, 255, 1);
+  --buttonHover: rgb(79 125 255 / 60%);
+  --success: rgba(21, 199, 88, 1);
+  --info: rgba(20, 157, 201, 1);
+  --warning: rgba(255, 199, 37, 1);
+  --danger: rgba(255, 107, 54, 1);
+  --light: rgb(9 55 137);
+  --dark: rgba(30, 30, 30, 1);
+}
