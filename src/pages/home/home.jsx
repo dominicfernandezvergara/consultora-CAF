@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./home.module.css";
-import ServicesListSlider from "../../components/services-list-slider";
 import FirstSectionHome from "../../components/home-components/first-section-home";
 import SecondSectionHome from "../../components/home-components/second-section-home";
 import ThirdSectionHome from "../../components/home-components/third-section-home";

@@ -5,51 +5,60 @@
   padding: 40px 20px;
   background-color: var(--white);
 }
-.containerLogo {
-  padding-bottom: 20px;
-}
-.footerData {
+.data {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  width: 100%;
 }
 .title {
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  padding-top: 30px;
   color: var(--primary);
 }
-.contactData {
-  color: var(--primary);
-  margin-top: 10px;
-  margin-bottom: 15px;
+.addresse {
+  color: #afaba3;
+  padding-bottom: 10px;
+}
+.icon :global(.MuiSvgIcon-root) {
+  font-size: 12px;
+}
+.containerText {
+  align-items: center;
+  display: flex;
+}
+.text {
+  padding: 3px;
+  color: rgb(9 55 137);
 }
 @media screen and (min-width: 768px) {
-  .containerLogo {
-    padding-bottom: 40px;
+  .containerFooter {
+    flex-direction: unset;
+  }
+  .data {
+    align-self: start;
+    padding-left: 20px;
   }
   .title {
-    text-transform: uppercase;
-    font-size: 24px;
+    padding-top: 0px;
+    font-size: 16px;
   }
-  .contactData {
-    font-size: 20px;
-    margin-top: 15px;
-    margin-bottom: 30px;
+  .text {
+    font-size: 14px;
   }
 }
 @media screen and (min-width: 1024px) {
+  .containerFooter {
+    display: flex;
+    flex-direction: unset;
+    place-content: space-between;
+    padding: 50px 50px;
+  }
 }
 @media screen and (min-width: 1440px) {
-  .containerFooter {
-    flex-direction: unset;
-    justify-content: center;
-  }
-  .containerLogo {
-    padding-bottom: 0px;
-    padding-right: 150px;
-  }
-  .title {
-    padding: 20px 0px;
-  }
-  .containerFooter {
-    padding: 80px 80px;
+  .containerServices {
+    width: 650px;
+    padding-left: 180px;
+    padding-right: 100px;
   }
 }
