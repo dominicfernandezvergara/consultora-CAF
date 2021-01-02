@@ -6,6 +6,7 @@ import Header from "./components/header";
 
 import Home from "./pages/home";
 import Services from "./pages/services";
+import Contact from "./pages/contact-us";
 
 function App() {
   return (
@@ -18,6 +19,9 @@ function App() {
           </Route>
           <Route path="/servicios">
             <Services />
+          </Route>
+          <Route path="/contacto">
+            <Contact />
           </Route>
         </Switch>
       </Router>

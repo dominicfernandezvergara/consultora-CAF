@@ -43,6 +43,9 @@
     padding-top: 0px;
     font-size: 16px;
   }
+  .addresse {
+    font-size: 14px;
+  }
   .text {
     font-size: 14px;
   }
@@ -53,6 +56,9 @@
     flex-direction: unset;
     place-content: space-between;
     padding: 50px 50px;
+  }
+  .containerServices {
+    padding-left: 50px;
   }
 }
 @media screen and (min-width: 1440px) {
