@@ -17,7 +17,7 @@ function Footer() {
           <div className={styles.icon}>
             <ArrowForwardIosIcon />
           </div>
-          <a href="../../pages/services" className={styles.text}>
+          <a href="/servicios" className={styles.text}>
             Lorem ipsum dolor sit amet
           </a>
         </div>
@@ -25,7 +25,7 @@ function Footer() {
           <div className={styles.icon}>
             <ArrowForwardIosIcon />
           </div>
-          <a href="../../pages/services" className={styles.text}>
+          <a href="/servicios" className={styles.text}>
             Lorem ipsum dolor sit amet
           </a>
         </div>
@@ -33,7 +33,7 @@ function Footer() {
           <div className={styles.icon}>
             <ArrowForwardIosIcon />
           </div>
-          <a href="../../pages/services" className={styles.text}>
+          <a href="/servicios" className={styles.text}>
             Lorem ipsum dolor sit amet
           </a>
         </div>

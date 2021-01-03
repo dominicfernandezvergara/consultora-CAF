@@ -1,19 +1,17 @@
 import React from "react";
-import Button from "../../components/button";
+
 import styles from "./services.module.css";
+import ListServices from "../../components/list-services/list-service";
+import Footer from "../../components/footer/footer";
 
 function Services() {
   return (
     <div className={styles.containerServices}>
-      <h3 className={styles.title}>Servicios</h3>
+      <h1 className={styles.title}>Servicios</h1>
       <div className={styles.containerService}>
-        <h4 className={styles.subTitle}>Subtitle</h4>
-        <p className={styles.text}>
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        </p>
-        <Button text="Conoce más" path="/algo" />
+        <ListServices />
       </div>
+      <Footer />
     </div>
   );
 }
