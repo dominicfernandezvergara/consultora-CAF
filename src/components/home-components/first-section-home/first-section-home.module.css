@@ -20,6 +20,8 @@
   position: absolute;
   bottom: 0;
   padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
 }
 @media screen and (min-width: 768px) {
   .containerFirstSection {
@@ -39,9 +41,8 @@
     height: 600px;
   }
 }
-@media screen and (min-width: 1440px) {
+/* @media screen and (min-width: 1440px) {
   .text {
     text-align: center;
-    width: 100%;
   }
-}
+} */

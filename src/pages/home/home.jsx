@@ -18,13 +18,13 @@ function Home() {
         text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua hola."
         buttonText="cotiza aquí"
-        paths="./cotizacion"
+        path="/contacto"
         colorButton="primary"
       />
       <ThirdSectionHome
         title="Mensaje Empatico Lorem ipsum dolor sit amet, consectetur adipiscing elit,"
         buttonText="cotiza aquí"
-        paths="./cotizacion"
+        path="/contacto"
         colorButton="secondary"
         styleBlack={true}
       />
@@ -32,7 +32,7 @@ function Home() {
       <FifthSectionHome
         title="¿Cómo funciona?"
         buttonText="cotiza aquí"
-        paths="./cotizacion"
+        path="/contacto"
         colorButton="secondary"
         styleBlack={true}
       />

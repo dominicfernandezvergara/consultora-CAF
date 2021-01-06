@@ -14,7 +14,7 @@ import styles from "./fifth-section-home.module.css";
 function FifthSectionHome({
   title,
   buttonText,
-  paths,
+  path,
   colorButton,
   styleBlack,
 }) {
@@ -84,7 +84,7 @@ function FifthSectionHome({
           </div>
         </div>
       </div>
-      <ButtonApp text={buttonText} path={paths} color={colorButton} />
+      <ButtonApp text={buttonText} path={path} color={colorButton} />
     </div>
   );
 }
@@ -92,7 +92,7 @@ function FifthSectionHome({
 FifthSectionHome.propTypes = {
   title: PropTypes.string.isRequired,
   buttonText: PropTypes.string.isRequired,
-  paths: PropTypes.string.isRequired,
+  path: PropTypes.string.isRequired,
   colorButton: PropTypes.string.isRequired,
   styleBlack: PropTypes.bool,
 };

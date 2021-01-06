@@ -1,6 +1,6 @@
 .containerDrawerList {
-  background: #0097a7;
-  width: 200px;
+  background: var(--light);
+  width: 220px;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -15,17 +15,23 @@
   display: block;
 }
 .headerDrawerList {
-  background: #0097a7;
+  background: var(--white);
+}
+.containerLogo {
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 .containerButtonCloseDrawer {
   position: absolute;
-  top: 5px;
-  right: -15px;
+  top: 0px;
+  right: 5px;
   width: 50px;
 }
 
-.clearIcon {
-  font-size: 50px;
+.containerButtonCloseDrawer :global(.MuiSvgIcon-root) {
+  font-size: 30px;
+  padding: 10px;
+  color: var(--light);
 }
 
 .buttonCloseDrawer {
@@ -42,7 +48,6 @@
 .drawerList {
   display: flex;
   flex-direction: column;
-  height: 100%;
   margin-left: 10px;
 }
 
@@ -57,6 +62,7 @@
 }
 
 .name {
+  color: var(--white);
   padding-left: 10px;
 }
 
@@ -101,4 +107,25 @@
 
 .material-icons.md-36 {
   font-size: 26px;
+}
+
+.data {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  margin-top: 20px;
+}
+.addresse {
+  color: #afaba3;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.containerText {
+  align-items: center;
+  display: flex;
+}
+.text {
+  padding: 3px;
+  color: var(--white);
 }

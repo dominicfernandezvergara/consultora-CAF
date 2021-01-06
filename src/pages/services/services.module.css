@@ -1,13 +1,13 @@
 .containerServices {
-  background-color: #f7f1f103;
+  background-color: rgb(9 55 137 / 95%);
 }
 .title {
-  color: var(--primary);
+  color: var(--white);
   text-align: center;
   padding: 10px;
 }
 @media screen and (min-width: 1024px) {
   .title {
-    margin-top: 20px;
+    padding-top: 20px;
   }
 }

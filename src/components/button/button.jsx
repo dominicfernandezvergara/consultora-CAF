@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "@material-ui/core/Button";
-import { useHistory } from "react-router-dom";
+import { Link } from "react-router-dom";
 import cn from "classnames";
 import PropTypes from "prop-types";
 
@@ -11,14 +11,15 @@ import styles from "./button.module.css";
 //path para redireccionar
 //color que puede ser "primary" o "secondary"
 function ButtonApp({ text, path, color }) {
-  const history = useHistory();
+  // const history = useHistory();
 
-  const handleClick = () => {
-    console.log("onClick");
-    // history.push(path);
-  };
+  // const handleClick = () => {
+  //   console.log("onClick");
+  //   // history.push(path);
+  // };
   return (
-    <div
+    <Link
+      to={path}
       className={cn(
         styles.containerButton,
         color === "primary" ? styles.colorPrimary : styles.colorSecondary
@@ -27,19 +28,20 @@ function ButtonApp({ text, path, color }) {
       <Button
         variant="contained"
         className={styles.button}
-        onClick={handleClick}
+        // onClick={handleClick}
       >
         {text}
       </Button>
-    </div>
+    </Link>
   );
 }
 ButtonApp.propTypes = {
   text: PropTypes.string.isRequired,
-  path: PropTypes.string.isRequired,
-  color: PropTypes.string.isRequired,
+  path: PropTypes.string,
+  color: PropTypes.string,
 };
 ButtonApp.defaultProps = {
   color: "secondary",
+  path: "/contacto",
 };
 export default ButtonApp;

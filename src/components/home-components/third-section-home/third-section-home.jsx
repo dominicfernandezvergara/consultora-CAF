@@ -15,7 +15,7 @@ function ThirdSectionHome({
   title,
   text,
   buttonText,
-  paths,
+  path,
   colorButton,
   styleBlack,
 }) {
@@ -37,7 +37,7 @@ function ThirdSectionHome({
       ) : null}
       <div className={styles.containerButtonIcons}>
         <div className={styles.containerButton}>
-          <ButtonApp text={buttonText} path={paths} color={colorButton} />
+          <ButtonApp text={buttonText} path={path} color={colorButton} />
         </div>
         <div className={styles.containerIconsSection}>
           <div className={styles.wrapIconsSection}>
@@ -67,7 +67,7 @@ function ThirdSectionHome({
 ThirdSectionHome.propTypes = {
   title: PropTypes.string.isRequired,
   buttonText: PropTypes.string.isRequired,
-  paths: PropTypes.string.isRequired,
+  path: PropTypes.string.isRequired,
   colorButton: PropTypes.string.isRequired,
   text: PropTypes.string,
   styleBlack: PropTypes.bool,

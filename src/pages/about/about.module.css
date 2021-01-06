@@ -1,0 +1,132 @@
+.containerImage {
+  background-color: var(--primary);
+  height: 300px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image {
+  height: 200px;
+  width: 150px;
+}
+.containerPersonalInfoText {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 20px;
+  box-sizing: border-box;
+}
+.titlePersonalInfo {
+  color: var(--primary);
+  text-align: center;
+  margin-bottom: 10px;
+}
+.textPersonalInfo {
+  color: var(--primary);
+  text-align: center;
+}
+.containerExperience {
+  background-size: contain;
+  background-image: url("../../images/IMG_0027_EstanquesAlmacenamiento.jpg");
+  width: 100%;
+  height: auto;
+}
+.shadowImage {
+  background-color: rgb(1 34 93 / 68%);
+  width: 100%;
+  height: 100%;
+  padding: 30px 0px;
+}
+.titleExperience {
+  color: var(--white);
+  text-align: center;
+  margin-bottom: 10px;
+  padding-top: 20px;
+  text-transform: uppercase;
+}
+.containerExperienceBoxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.experienceBox {
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+    0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+  background-color: var(--primary);
+  color: var(--white);
+  width: 120px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  text-align: center;
+  padding: 5px;
+  border: none;
+  font-size: 16px;
+}
+.experienceBox :hover {
+  background-color: var(--light);
+}
+@media screen and (min-width: 768px) {
+  .containerPersonalInfo {
+    display: flex;
+  }
+  .image {
+    height: auto;
+    width: 200px;
+  }
+
+  .shadowImage {
+    box-sizing: border-box;
+    padding: 30px 110px;
+  }
+  .experienceBox {
+    width: 160px;
+    height: 160px;
+    font-size: 20px;
+  }
+  .titleExperience {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .containerImage {
+    height: 500px;
+  }
+  .image {
+    width: 300px;
+  }
+  .shadowImage {
+    padding: 30px 150px;
+  }
+  .experienceBox {
+    width: 200px;
+    height: 200px;
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .image {
+    width: 400px;
+  }
+
+  .titlePersonalInfo {
+    margin-top: 50px;
+    padding: 0px 50px;
+  }
+  .textPersonalInfo {
+    font-size: 18px;
+    padding: 20px 50px;
+  }
+  .shadowImage {
+    padding: 50px 220px;
+  }
+  .experienceBox {
+    width: 220px;
+    height: 220px;
+    font-size: 22px;
+    margin: 30px;
+  }
+}

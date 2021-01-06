@@ -68,7 +68,7 @@ function Header() {
         <div className={styles.containerLogo}>
           <Logo width={100} height={100} />
         </div>
-        <Button text="Cotiza Aquí" path="/algo" color="primary" />
+        <Button text="Cotiza Aquí" path="/contacto" color="primary" />
         <div className={styles.containerButton}>
           <Drawer />
         </div>

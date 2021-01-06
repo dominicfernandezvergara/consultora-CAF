@@ -14,7 +14,7 @@ function SecondSectionHome({
   title,
   text,
   buttonText,
-  paths,
+  path,
   colorButton,
   styleBlack,
 }) {
@@ -41,7 +41,7 @@ function SecondSectionHome({
       >
         {text}
       </p>
-      <ButtonApp text={buttonText} path={paths} color={colorButton} />
+      <ButtonApp text={buttonText} path={path} color={colorButton} />
     </div>
   );
 }
@@ -50,7 +50,7 @@ SecondSectionHome.propTypes = {
   title: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
   buttonText: PropTypes.string.isRequired,
-  paths: PropTypes.string.isRequired,
+  path: PropTypes.string.isRequired,
   colorButton: PropTypes.string.isRequired,
   styleBlack: PropTypes.bool.isRequired,
 };

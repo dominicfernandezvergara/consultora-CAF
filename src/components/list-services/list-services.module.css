@@ -78,7 +78,7 @@
   }
   .servicio {
     padding: 0px 0px;
-    margin: 20px 120px;
+    margin: 20px 210px;
   }
   .wrappServices {
     display: flex;
@@ -93,14 +93,14 @@
   .containerImage {
     display: block;
     text-align: center;
-    padding-left: 60px;
+    padding-left: 45px;
   }
   .gestionImage {
     width: auto;
     height: auto;
   }
   .imageCurso {
-    width: 420px;
+    width: 340px;
     height: auto;
   }
 }

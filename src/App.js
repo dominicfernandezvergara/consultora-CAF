@@ -7,6 +7,7 @@ import Header from "./components/header";
 import Home from "./pages/home";
 import Services from "./pages/services";
 import Contact from "./pages/contact-us";
+import About from "./pages/about";
 
 function App() {
   return (
@@ -16,6 +17,9 @@ function App() {
         <Switch>
           <Route path="/inicio">
             <Home />
+          </Route>
+          <Route path="/quien-soy">
+            <About />
           </Route>
           <Route path="/servicios">
             <Services />
