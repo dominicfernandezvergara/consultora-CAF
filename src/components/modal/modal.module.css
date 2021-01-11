@@ -13,9 +13,9 @@
   padding: 30px 10px;
   border: 1px solid #dfdfdf;
   position: fixed;
-  top: 40px;
-  left: 15px;
-  right: 15px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   border-radius: 10px;
   outline: none;
 }
@@ -39,23 +39,5 @@
   .containerModal {
     width: 50%;
     height: auto;
-    left: 150px;
-    right: 150px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .containerModal {
-    /* width: 50%;
-    height: 40%; */
-    left: 250px;
-    right: 250px;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .containerModal {
-    /* width: 40%;
-    height: 40%; */
-    left: 350px;
-    right: 350px;
   }
 }

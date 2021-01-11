@@ -27,6 +27,9 @@ function App() {
           <Route path="/contacto">
             <Contact />
           </Route>
+          <Route path="*">
+            <Home />
+          </Route>
         </Switch>
       </Router>
     </Fragment>

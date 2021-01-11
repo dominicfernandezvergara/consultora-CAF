@@ -1,0 +1,72 @@
+.containerDeskServices {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 95%;
+}
+.containerDeskServices :global(.MuiAppBar-colorPrimary) {
+  border-radius: 10px 10px 0px 0px;
+  background-color: var(--primary);
+}
+
+.containerDeskServices :global(.MuiPaper-elevation4) {
+  box-shadow: none;
+}
+.containerDeskServices :global(.MuiBox-root) {
+  padding: 0px;
+}
+
+.containerService {
+  background-color: var(--white);
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+.servicio {
+  margin-bottom: 20px;
+  background-color: var(--white);
+  border-radius: 0px 0px 10px 10px;
+  padding: 10px;
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+    0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+.title {
+  color: var(--primary);
+  padding-bottom: 20px;
+  padding-top: 10px;
+  text-align: center;
+}
+.subtitle {
+  color: var(--primary);
+}
+.description {
+  padding: 10px;
+  color: var(--info);
+}
+.wrappServices {
+  padding-left: 50px;
+}
+.containerGestionServices {
+  width: 500px;
+}
+.containerServicesImage {
+  display: flex;
+}
+.containerImage {
+  display: flex;
+}
+.gestionImage {
+  width: 400px;
+  height: 240px;
+}
+.imageCurso {
+  width: 400px;
+  height: 340px;
+}
+
+@media screen and (min-width: 1280px) {
+  .containerServicesImage {
+    display: flex;
+    justify-content: center;
+  }
+}

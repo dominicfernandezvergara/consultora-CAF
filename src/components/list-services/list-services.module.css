@@ -1,106 +1,16 @@
-.containerButton {
-  display: flex;
-  flex-direction: column;
-}
-.containerButton :global(.MuiButton-root) {
-  color: var(--white);
-  background-color: var(--primary);
-  text-transform: uppercase;
-  margin: 10px;
-}
-.containerButton :global(.MuiButton-root:hover) {
-  background-color: var(--buttonHover);
-}
-.containerService {
-  background-color: var(--light);
-  border-radius: 10px;
-  padding: 10px;
-  margin-bottom: 5px;
-}
-.servicio {
-  margin: 10px 10px;
-  background-color: var(--primary);
-  border-radius: 10px;
-  padding: 10px;
-  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
-    0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
-}
-.title {
-  color: var(--white);
-  padding-bottom: 20px;
-  padding-top: 10px;
-  text-align: center;
-}
-.subtitle {
-  color: var(--white);
-}
-.description {
-  padding: 10px;
-  color: var(--info);
-}
-.containerImage {
+.containerDesk {
   display: none;
 }
-@media screen and (min-width: 768px) {
-  .containerListServices {
-    min-height: 424px;
-  }
-  .containerButton {
-    flex-direction: unset;
-    padding: 0px 25px;
-    justify-content: center;
-  }
-  .containerService {
-    margin-bottom: 20px;
-  }
-  .title {
-    padding: 30px;
-    text-transform: uppercase;
-  }
-  .servicio {
-    padding: 1px 30px;
-    margin: 10px 30px;
-  }
+.containerMobile {
+  display: flex;
 }
+
 @media screen and (min-width: 1024px) {
-  .servicio {
-    padding: 1px 50px;
-    margin: 20px 50px;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .containerButton :global(.MuiButton-root) {
-    font-size: 20px;
-  }
-  .containerServicesImage {
+  .containerDesk {
     display: flex;
     justify-content: center;
   }
-  .servicio {
-    padding: 0px 0px;
-    margin: 20px 210px;
-  }
-  .wrappServices {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-bottom: 20px;
-  }
-  .containerAsesoria {
-    width: 400px;
-    margin: 20px;
-  }
-  .containerImage {
-    display: block;
-    text-align: center;
-    padding-left: 45px;
-  }
-  .gestionImage {
-    width: auto;
-    height: auto;
-  }
-  .imageCurso {
-    width: 340px;
-    height: auto;
+  .containerMobile {
+    display: none;
   }
 }

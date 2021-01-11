@@ -1,0 +1,68 @@
+.containerSelect {
+  display: flex;
+  margin: 10px;
+}
+.formControl {
+  width: 100%;
+}
+.containerSelect :global(.MuiInputLabel-outlined.MuiInputLabel-shrink) {
+  color: var(--white);
+}
+.containerSelect :global(.MuiSelect-outlined.MuiSelect-outlined) {
+  color: var(--white);
+}
+.containerSelect :global(.MuiInputLabel-root) {
+  color: var(--white);
+}
+
+.containerService {
+  background-color: var(--light);
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+.servicio {
+  margin: 0px 10px;
+  background-color: var(--primary);
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+    0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+.title {
+  color: var(--white);
+  padding-bottom: 20px;
+  padding-top: 10px;
+  text-align: center;
+}
+.subtitle {
+  color: var(--white);
+}
+.description {
+  padding: 10px;
+  color: var(--info);
+}
+.containerImage {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .containerSelect {
+    margin: 10px 30px;
+  }
+
+  .containerListServices {
+    min-height: 424px;
+  }
+
+  .containerService {
+    margin-bottom: 20px;
+  }
+  .title {
+    padding: 30px;
+    text-transform: uppercase;
+  }
+  .servicio {
+    padding: 1px 30px;
+    margin: 20px 30px;
+  }
+}

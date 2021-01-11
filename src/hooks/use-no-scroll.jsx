@@ -4,7 +4,7 @@ function UseNoScroll(open) {
   useEffect(() => {
     if (open) {
       document.documentElement.style.overflow = "hidden";
-      document.documentElement.style.position = "fixed";
+      // document.documentElement.style.position = "fixed";
       document.documentElement.style.width = "100%";
     } else {
       document.documentElement.style.overflow = "";
