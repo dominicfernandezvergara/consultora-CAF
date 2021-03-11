@@ -5,6 +5,23 @@
   box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
     0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
   background-color: var(--white);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+
+  /* display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+    0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+  background-color: var(--white); */
+}
+.headerWhite {
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+    0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+  background-color: #ffffffb8;
 }
 .containerLogo {
   padding-top: 10px;
@@ -17,6 +34,9 @@
 .headerButton {
   color: var(--primary);
 }
+.headerResponsiveSmall :global(.MuiButton-root) {
+  font-size: 10px;
+}
 
 .shoppingCartButton {
   background-color: transparent;
@@ -28,13 +48,30 @@
 
 @media screen and (min-width: 768px) {
   .headerResponsiveLarge {
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
     display: flex;
+    align-items: center;
+    padding: 0 20px;
+    justify-content: space-between;
+    background: white;
+
+    /* display: flex;
     align-items: center;
     padding: 0 20px;
     justify-content: space-between;
     box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
       0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
-    background: white;
+    background: white; */
+  }
+  .headerWhite {
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+      0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+    background-color: #ffffffb8;
   }
   .containerLogo {
     flex-grow: 1;

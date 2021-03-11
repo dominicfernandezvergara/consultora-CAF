@@ -1,4 +1,4 @@
-import React, { Fragment, useState, useEffect } from "react";
+import React, { Fragment, useState, useEffect, useLayoutEffect } from "react";
 import cn from "classnames";
 import { useHistory, useLocation } from "react-router-dom";
 
@@ -62,9 +62,27 @@ function Header() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  const [startScrolling, setStartScrolling] = useState(false);
+
+  useLayoutEffect(() => {
+    window.onscroll = function () {
+      if (window.pageYOffset === 0) {
+        setStartScrolling(false);
+      } else {
+        setStartScrolling(true);
+      }
+    };
+    return () => {
+      window.onscroll = null;
+    };
+  }, [startScrolling]);
   return (
     <Fragment>
-      <header className={styles.headerResponsiveSmall}>
+      <header
+        className={cn(styles.headerResponsiveSmall, {
+          [styles.headerWhite]: startScrolling,
+        })}
+      >
         <div className={styles.containerLogo}>
           <Logo width={100} height={100} />
         </div>
@@ -74,9 +92,17 @@ function Header() {
         </div>
       </header>
 
-      <header className={styles.headerResponsiveLarge}>
+      <header
+        className={cn(styles.headerResponsiveLarge, {
+          [styles.headerWhite]: startScrolling,
+        })}
+      >
         <div className={styles.containerLogo}>
-          <Logo width={100} height={100} />
+          {startScrolling ? (
+            <Logo width={80} height={80} />
+          ) : (
+            <Logo width={60} height={60} />
+          )}
         </div>
         <div className={styles.containerHeaderButton}>
           {buttonHeaderData.map((item, index) => {

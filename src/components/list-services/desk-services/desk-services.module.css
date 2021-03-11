@@ -7,15 +7,21 @@
 .containerDeskServices :global(.MuiAppBar-colorPrimary) {
   border-radius: 10px 10px 0px 0px;
   background-color: var(--primary);
+  display: flex;
+  align-items: center;
 }
-
 .containerDeskServices :global(.MuiPaper-elevation4) {
   box-shadow: none;
 }
 .containerDeskServices :global(.MuiBox-root) {
   padding: 0px;
 }
-
+.containerDeskServices :global(.MuiTab-root) {
+  min-width: 280px;
+}
+.containerDeskServices :global(.PrivateTabIndicator-root-5) {
+  min-width: 280px;
+}
 .containerService {
   background-color: var(--white);
   border-radius: 10px;
@@ -68,5 +74,11 @@
   .containerServicesImage {
     display: flex;
     justify-content: center;
+  }
+  .containerDeskServices :global(.MuiTab-root) {
+    min-width: 350px;
+  }
+  .containerDeskServices :global(.PrivateTabIndicator-root-5) {
+    min-width: 350px;
   }
 }

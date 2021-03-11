@@ -1,0 +1,54 @@
+.containerContactData {
+  padding: 50px 20px;
+}
+.title {
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--light);
+}
+.data {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.containerText {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.text {
+  color: var(--secondary);
+}
+
+.iconLink :global(.MuiSvgIcon-root) {
+  font-size: 30px;
+  padding-right: 15px;
+  color: var(--light);
+}
+@media screen and (min-width: 768px) {
+  .containerContactData {
+    background-color: var(--light);
+  }
+  .title {
+    color: var(--white);
+  }
+  .containerText {
+    margin-bottom: 15px;
+    flex-direction: column;
+  }
+  .iconLink :global(.MuiSvgIcon-root) {
+    color: var(--white);
+    margin-bottom: 5px;
+    font-size: 40px;
+  }
+  .text {
+    color: var(--white);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .title {
+    font-size: 26px;
+  }
+  .text {
+    font-size: 20px;
+  }
+}

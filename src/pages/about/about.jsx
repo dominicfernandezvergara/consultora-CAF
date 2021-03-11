@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import styles from "./about.module.css";
+import UseScrollToTop from "../../hooks/use-scroll-to-top";
 import Footer from "../../components/footer";
 import Modal from "../../components/modal";
 import ModalExperience from "../../components/modal/modal-experience";
@@ -8,6 +9,7 @@ import image from "../../images/IMG_0027_EstanquesAlmacenamiento.jpg";
 import { experienceData } from "./dataAboutExperience";
 
 function About() {
+  UseScrollToTop();
   const [modalState, setModalState] = useState(false);
   const [arrayExperiences, setArrayExperiences] = useState([{}]);
 

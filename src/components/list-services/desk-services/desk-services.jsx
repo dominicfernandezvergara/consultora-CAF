@@ -58,9 +58,21 @@ function DeskServices() {
           onChange={handleChangeTabs}
           aria-label="simple tabs example"
         >
-          <Tab label="Asesorias Ambientales" {...a11yProps(0)} />
-          <Tab label="Gestion en Prevencion de Riesgos" {...a11yProps(1)} />
-          <Tab label="Cursos" {...a11yProps(2)} />
+          <Tab
+            className={styles.tabServices}
+            label="Asesorias Ambientales"
+            {...a11yProps(0)}
+          />
+          <Tab
+            className={styles.tabServices}
+            label="Gestion en Prevencion de Riesgos"
+            {...a11yProps(1)}
+          />
+          <Tab
+            className={styles.tabServices}
+            label="Cursos"
+            {...a11yProps(2)}
+          />
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>

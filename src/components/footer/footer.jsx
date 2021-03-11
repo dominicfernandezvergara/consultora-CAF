@@ -1,5 +1,7 @@
 import React from "react";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
+import PhoneIcon from "@material-ui/icons/Phone";
+import EmailIcon from "@material-ui/icons/Email";
 import cn from "classnames";
 
 import styles from "./footer.module.css";
@@ -18,7 +20,7 @@ function Footer() {
             <ArrowForwardIosIcon />
           </div>
           <a href="/servicios" className={styles.text}>
-            Lorem ipsum dolor sit amet
+            Asesorias Ambientales
           </a>
         </div>
         <div className={styles.containerText}>
@@ -26,7 +28,7 @@ function Footer() {
             <ArrowForwardIosIcon />
           </div>
           <a href="/servicios" className={styles.text}>
-            Lorem ipsum dolor sit amet
+            Gestion en prevencion de riesgos
           </a>
         </div>
         <div className={styles.containerText}>
@@ -34,7 +36,7 @@ function Footer() {
             <ArrowForwardIosIcon />
           </div>
           <a href="/servicios" className={styles.text}>
-            Lorem ipsum dolor sit amet
+            Cursos
           </a>
         </div>
       </div>
@@ -45,18 +47,21 @@ function Footer() {
         </p>
         <div className={styles.containerText}>
           <div className={styles.icon}>
-            <ArrowForwardIosIcon />
+            <PhoneIcon />
           </div>
-          <a href="tel:5551234567" className={styles.text}>
-            Teléfono : +56222225473
+          <a href="tel:56979580178" className={styles.text}>
+            +56979580178
           </a>
         </div>
         <div className={styles.containerText}>
           <div className={styles.icon}>
-            <ArrowForwardIosIcon />
+            <EmailIcon />
           </div>
-          <a href="mailto: abc@example.com" className={styles.text}>
-            E-mail : info@contacto.cl
+          <a
+            href="mailto: jcfernandez@consultoracaf.cl"
+            className={styles.text}
+          >
+            jcfernandez@consultoracaf.cl
           </a>
         </div>
       </div>

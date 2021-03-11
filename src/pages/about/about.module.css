@@ -1,3 +1,6 @@
+.containerAbout {
+  margin-top: 80px;
+}
 .containerImage {
   background-color: var(--primary);
   height: 300px;
